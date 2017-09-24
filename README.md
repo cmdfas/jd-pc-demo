@@ -9,13 +9,13 @@ html + css + js + jquery + express
 ## 项目运行
 
 ```
-git clone
-cd 
+git clone https://github.com/cmdfas/jd-pc-demo.git
+cd jd-pc-demo
 yarn install 或者 npm install
 
-cd api && node server.js
-cd..
-node app.js
+cd api && node server.js //先运行后端api接口
+cd.. //返回目录
+node app.js 
 
 在浏览中打开:
 - 首页 [http://localhost:7778](http://localhost:7778)
