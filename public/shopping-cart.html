@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/shoppingCart.css" />
+		<link rel="stylesheet" type="text/css" href="css/jquery.checkbox.css" />
+		
+	</head>
+	<body>
+		<!-- 购物车头部 -->
+		<div class="allGoodsNum">
+			<p>全部商品<i id="totalGoodsNumberId">4</i></p>
+		</div>
+		<div class="cartTitle">
+			<input type="checkbox" class="checkAllBtn" id="checkAllA" checked/>
+			<label for="checkAllA" class="checkAllBtn">全选</label>
+			<p class="p1">商品</p>
+			<p class="p2">单价</p>
+			<p class="p3">数量</p>
+			<p class="p4">小计</p>
+			<p class="p5">操作</p>
+		</div>
+		<!-- 购物车列表 -->
+		<div class="cartWrap" id="cartWrapId">
+			<!--<div class="border2px"></div>
+			<div class="goodsItem">
+				<input type="checkbox" class="chk" />
+				<div class="goodsItemPic">
+					<img src="images/temp/temp11.jpg"/>
+				</div>
+				<p class="title">孩之宝（Hasbro）变形金刚 玩具 电影5 航行家级 威震天 C2355</p>
+				<p class="info">颜色：电影5 威震天</p>
+				<p class="price">¥239.00</p>
+				<div class="goodsNumInput">
+					<input type="button" class="a" value="-" />
+					<input type="text" class="b"  value="1"/>
+					<input type="button" class="c" value="+" />
+				</div>
+				<p class="allPrice">¥239.00</p>
+				<p class="delete">删除</p>
+			</div>
+			<div class="border2px"></div>
+			<div class="goodsItem">
+				<input type="checkbox" class="chk" />
+				<div class="goodsItemPic">
+					<img src="images/temp/temp11.jpg"/>
+				</div>
+				<p class="title">孩之宝（Hasbro）变形金刚 玩具 电影5 航行家级 威震天 C2355</p>
+				<p class="info">颜色：电影5 威震天</p>
+				<p class="price">¥239.00</p>
+				<div class="goodsNumInput">
+					<input type="button" class="a" value="-" />
+					<input type="text" class="b"  value="1"/>
+					<input type="button" class="c" value="+" />
+				</div>
+				<p class="allPrice">¥239.00</p>
+				<p class="delete">删除</p>
+			</div>
+			<div class="border2px"></div>
+			<div class="goodsItem">
+				<input type="checkbox" class="chk" />
+				<div class="goodsItemPic">
+					<img src="images/temp/temp11.jpg"/>
+				</div>
+				<p class="title">孩之宝（Hasbro）变形金刚 玩具 电影5 航行家级 威震天 C2355</p>
+				<p class="info">颜色：电影5 威震天</p>
+				<p class="price">¥239.00</p>
+				<div class="goodsNumInput">
+					<input type="button" class="a" value="-" />
+					<input type="text" class="b"  value="1"/>
+					<input type="button" class="c" value="+" />
+				</div>
+				<p class="allPrice">¥239.00</p>
+				<p class="delete">删除</p>
+			</div>-->
+		</div>
+		<!-- 购物车底部 -->
+		<div class="footerWrap">
+			<input type="checkbox" class="cbx checkAllBtn" id="checkAllB" checked/>
+			<label for="checkAllB">全选</label>
+			<p class="deleteGoods" id="deleteSelectGoodsBtn">删除选中的商品</p>
+			<p class="selected">已选择<i id="selectGoodsNumberId">4</i>件商品</p>
+			<p class="allGoodsPrice">总价：<i>￥</i><i id="totalGoodsMoneyId">2573.90</i></p>
+			<p class="saveMoney">已节省：-￥0</p>
+			<input type="button" value="去结算" class="toPay"/>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+		<script type="text/javascript" src="js/library/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/cartTpl.js"></script>
+		<script type="text/javascript" src="js/jquery.checkbox.js"></script>
+		<script type="text/javascript" src="js/shopCart.js"></script>
+	</body>
+</html>

@@ -1,0 +1,23 @@
+.checkboxSkin{
+	width: 30px;
+	height: 30px;
+	background: red;
+	position: relative;
+}
+.checkboxSkin input[type='checkbox']{
+	width: 30px;
+	height: 30px;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 99;
+}
+.checkboxSkin img{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;	
+}

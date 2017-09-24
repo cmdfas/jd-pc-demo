@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电商项目-用户详情页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/userinfo.css" />		
+	</head>
+	<body>
+		<div id="userInfoWrap">
+			<!-- 左侧导航 -->
+			<div class="navUserInfo">
+				<dl>
+					<dt>设置</dt>
+					<dd>个人信息</dd>
+					<dd class="active">个人信息</dd>
+					<dd>个人信息</dd>
+					<dd>个人信息</dd>
+					<dd>个人信息</dd>
+					<dd>个人信息</dd>
+					<dd>个人信息</dd>
+					<dd>个人信息</dd>
+				</dl>
+			</div>
+			<!-- main right -->
+			<div class="mainRight">
+				<!-- user-tab-title start -->
+				<ul class="user-tab-title">
+					<li class="active">11111</li>
+					<li>222222</li>
+					<li>333333</li>
+				</ul>
+				<!-- user-tab-title end -->
+				<!-- user-tab-content -->
+				<div class="user-tab-content">
+					<ul>
+						<li>
+							<label for="">用户名:&nbsp;&nbsp;</label>
+							<span>安静静的海</span>
+						</li>
+						<li>
+							<label for=""><i class="red">*</i>登录名:&nbsp;&nbsp;</label>
+							<span>安静静的海</span>
+							<a href="#">修改</a>
+							<p>可用于登录，修改哦</p>
+						</li>
+						<li>
+							<label for="">昵称:&nbsp;&nbsp;</label>
+							<input class="commonInput" type="text" value="安静的海"/>
+						</li>
+						<li>
+							<label><i class="red">*</i>性别:&nbsp;&nbsp;</label>
+							<input class="radioSex" name="sex" id="sex-a" type="radio" />
+							<label class="labelSex" for="sex-a">男</label>
+							<input class="radioSex" name="sex" id="sex-b" type="radio" />
+							<label class="labelSex" for="sex-b">女</label>
+							<input class="radioSex" name="sex" id="sex-c" type="radio" />
+							<label class="labelSex" for="sex-c">保密</label>
+						</li>
+						<li>
+							<label for="">生日:&nbsp;&nbsp;</label>
+							
+							<select name="" class="birthday">
+								<option value="">1978</option>
+							</select>
+							<b>年</b>
+							<select name="" class="birthday">
+								<option value="">12</option>
+							</select>
+							<b>月</b>
+							<select name="" class="birthday">
+								<option value="">10</option>
+							</select>
+							<b>日</b>
+							<p>可用于登录，修改哦</p>
+						</li>
+						<li>
+							<label for="">兴趣爱好:&nbsp;&nbsp;</label>
+							<div class="likeList">
+								<span>请选择您感兴趣的</span>
+								<div>天天唱歌</div>
+								<div>吃喝玩乐</div>
+								<div class="active">运动健身</div>
+								<div>环球旅游</div>
+								<div>弹吉他</div>
+								<div>汽车用品</div>
+								<div>食品和饮料</div>
+								<div>天天唱歌</div>
+								<div>吃喝玩乐</div>
+								<div>运动健身</div>
+								<div>环球旅游</div>
+								<div>弹吉他</div>
+								<div>汽车用品</div>
+								<div>食品和饮料</div>
+								<div>房子飞机</div>
+							</div>
+						</li>
+						<li>
+							<label for="">邮箱:&nbsp;&nbsp;</label>
+							<!--<span>zm21@qq.com</span>-->
+							<input id="xxb" disabled="disabled" class="commonInput" type="text" value="zm21@gmail.com" />
+							<a id="xxa"  href="javascript:0;">立即验证</a>
+							<p id="xxc">已验证</p>
+						</li>
+						<li>
+							<label for=""><i class="red">*</i>真实姓名:&nbsp;&nbsp;</label>
+							<input class="commonInput" type="text" value="孙帅"/>
+						</li>
+						<li>
+							<input class="submitBtn" type="button" value="提交"/>
+						</li>
+					</ul>
+				</div>
+				<!-- user-tab-content end -->
+			</div>
+		</div>
+		<script>
+			var xxa = document.getElementById('xxa');
+			var xxb = document.getElementById('xxb');
+			var xxc = document.getElementById('xxc');
+			xxa.onclick = function(){
+				xxb.removeAttribute('disabled');
+			}
+			xxc.onclick = function(){
+				xxb.setAttribute('disabled','disabled');
+			}
+		</script>
+	</body>
+</html>

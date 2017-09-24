@@ -1,0 +1,170 @@
+/*
+ * date：2017-07-21
+ * name：电商项目-用户详情页-样式
+ * author：孙帅
+ * */
+#userInfoWrap{
+	width: 1018px;
+	margin: 0 auto;
+	background: #F5F5F5;
+	overflow: hidden;
+	padding-bottom: 30px;
+}
+/* navUserInfo */
+#userInfoWrap .navUserInfo{
+	width: 112px;
+	float: left;
+	padding: 30px 0 0 18px;
+}
+#userInfoWrap .navUserInfo dt{
+	font-size: 14px;
+	color: #000;
+	height: 27px;
+	line-height: 27px;
+	font-weight: bold;
+}
+#userInfoWrap .navUserInfo dd{
+	font-size: 12px;
+	color: #666;
+	height: 24px;
+	line-height: 24px;
+}
+#userInfoWrap .navUserInfo dd.active{
+	color: #f00;
+	font-weight: bold;
+}
+/* mainRight */
+#userInfoWrap .mainRight{
+	float: right;
+	width: 870px;
+	background: #fff;
+	/*height: 700px;*/
+	margin-right: 15px;
+	margin-top: 15px;
+	padding-bottom: 20px;
+}
+/* user-tab-title */
+#userInfoWrap .user-tab-title{
+	overflow: hidden;
+	margin: 24px 0 0 40px;
+	color: #666;
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+#userInfoWrap .user-tab-title li{
+	float: left;
+	margin-right: 20px;
+}
+#userInfoWrap .user-tab-title li.active{
+	color: #f00;
+	font-weight: bold;
+	border-bottom: 2px solid #f00;
+}
+/* user-tab-content */
+#userInfoWrap .user-tab-content{
+	width: 580px;
+	margin-left: 60px;
+}
+#userInfoWrap .user-tab-content li{
+	margin-bottom: 18px;
+	line-height: 30px;
+	font-size: 12px;
+	color: #666;
+}
+#userInfoWrap .user-tab-content li:after{
+	content: '';height: 0;clear: both;display: block;
+}
+/* 公用样式 */
+#userInfoWrap .user-tab-content li label{
+	float: left;
+	width: 80px;
+	text-align: right;
+}
+#userInfoWrap .user-tab-content li span{
+	float: left;
+	font-weight: bold;
+}
+#userInfoWrap .user-tab-content li a{
+	float: left;
+	margin-left: 27px;
+	color: #005ea7;
+}
+#userInfoWrap .user-tab-content li p{
+	float: left;
+	color: #999;
+	margin-left: 5px;
+}
+#userInfoWrap .user-tab-content li i.red{
+	color: #f00;
+}
+/* 昵称编辑 */
+#userInfoWrap .user-tab-content li .commonInput{
+	float: left;
+	width: 155px;
+	height: 28px;
+	border: 1px solid #cfcfcf;
+	padding-left: 5px;
+}
+/* 性别选择  */
+#userInfoWrap .user-tab-content li .radioSex{
+	float: left;
+	margin: 9px 4px 0 0;
+}
+#userInfoWrap .user-tab-content li .labelSex{
+	width: auto;
+	margin-right: 5px;
+}
+/* 生日日期 */
+#userInfoWrap .user-tab-content li .birthday{
+	width: 68px;
+	height: 30px;
+	border: 1px solid #cfcfcf;
+	float: left;
+}
+#userInfoWrap .user-tab-content li b{
+	font-weight: normal;
+	margin: 0 5px;
+	float: left;
+}
+/* 兴趣爱好 */
+#userInfoWrap .user-tab-content li .likeList{
+	width: 400px;
+	float: left;
+}
+#userInfoWrap .user-tab-content li .likeList span{
+	float: none;
+	display: block;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+#userInfoWrap .user-tab-content li .likeList div{
+	display: inline-block;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #cfcfcf;
+	padding: 8px 10px;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+#userInfoWrap .user-tab-content li .likeList div.active{
+	border: 2px solid #e4393c;
+	padding: 7px 9px;
+}
+/* 邮箱修改 */
+#userInfoWrap .user-tab-content li input[disabled='disabled']{
+	background: #fff;
+	font-weight: bold;
+	border: 1px solid transparent;
+}
+/* 提交按钮 */
+#userInfoWrap .user-tab-content li .submitBtn{
+	width: 54px;
+	height: 24px;
+	border: 1px solid #bfd6af;
+	background: url(../images/line.jpg) repeat-x;
+	border-radius: 3px;
+	margin-left: 80px;
+	cursor: pointer;
+	font-size: 12px;
+}

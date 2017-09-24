@@ -1,0 +1,35 @@
+/*
+ * date：2017-07-13 
+ * name：电商项目布局样式
+ * author：孙帅
+ * */
+/* index 页 */
+/* 网页头 */
+.wrap {
+	width: 1183px;
+	height: 160px;
+	background: #F6F6F6;
+	margin: 0 auto;
+	position: relative;
+}
+/* 网页主体 */
+.mainWrap{
+	width: 1183px;
+	height: 480px;
+	background: #DDDDDD;
+	margin: 0 auto;
+}
+/* goods detail 页 */
+.goodsWrap{
+	width: 1325px;
+	height: 595px;
+	margin: 0 auto;
+}
+.wrapLeft{
+	width: 505px;
+	float: left;
+}
+.wrapRight{
+	width: 800px;
+	float: right;
+}

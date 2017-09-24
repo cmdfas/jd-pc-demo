@@ -1,0 +1,11 @@
+/*
+ * date：2017-07-13 
+ * name：电商项目所有样式重置
+ * author：孙帅
+ * */
+body,p,dl,dt,dd,h1,h2,h3,h4,h5,h6 {margin: 0; font-family: "microsoft yahei";}
+a{text-decoration: none;}
+ul {margin: 0;padding: 0;}
+ul,li {list-style-type: none;}
+input {margin:0;padding: 0;outline: 0;border: 0;}
+i{font-style: normal;}

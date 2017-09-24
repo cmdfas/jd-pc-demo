@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电商项目-地址选择页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/userinfo.css" />
+		<link rel="stylesheet" href="css/adress-select.css" />		
+	</head>
+	<body>
+		<!-- (13.47分开始制作 14.01停止) (17.23开始--18.30页面完成，19.40 JS交互完成) -->
+		<!-- 
+			静态页面用时：1小时21分钟
+			JS交互用时：1小时10分钟
+		-->
+		<div id="userInfoWrap">
+			<!-- 左侧导航 -->
+			<div class="navUserInfo">
+				<dl>
+					<dt>设置</dt>
+					<dd>个人信息</dd>
+					<dd class="active">账户绑定</dd>
+					<dd>我的级别</dd>
+					<dd>收货地址</dd>
+					<dd>用药人任务</dd>
+					<dd>分享绑定</dd>
+					<dd>邮件订阅</dd>
+					<dd>消费记录</dd>
+					<dd>收货地址</dd>
+					<dd>用药人任务</dd>
+					<dd>分享绑定</dd>
+					<dd>邮件订阅</dd>
+					<dd>消费记录</dd>
+				</dl>
+				<!-- 广告区域 -->
+				<div class="adv-adress-select-1 mt20">
+					<img src="images/temp/temp13.jpg"/>
+				</div>
+				<div class="adv-adress-select-1">
+					<img src="images/temp/temp14.jpg"/>
+				</div>
+			</div>
+			
+			<!-- main right -->
+			<div class="mainRight">
+				<!-- addAddressDiv  start -->
+				<div class="addAddressDiv">
+					<input type="button" class="addAddressBtn" value="新增收货地址"/>
+					<span> 您已创建<i>8</i> 个收货地址，最多可创建<i>20</i>个</span>
+				</div>
+				<!-- addAddressDiv end -->
+				<!-- addressItem start -->
+				<div class="addressItem">
+					<h2>孙帅</h2>
+					<input type="button" class="editAdressBtn" />
+					<span class="default">默认地址</span>
+					<ul class="infoList">
+						<li>
+							<label>收货人:</label>
+							<span>孙帅</span>
+						</li>
+						<li>
+							<label>所在地区:</label>
+							<span>肇庆市端州路133号  邮编：333111</span>
+						</li>
+						<li>
+							<label>地址:</label>
+							<span>广州市白云国际机场空港思路海关大楼1号</span>
+						</li>
+						<li>
+							<label>手机:</label>
+							<span>138****3331</span>
+						</li>
+						<li>
+							<label>固定电话:</label>
+							<span></span>
+						</li>
+						<li>
+							<label>电子邮箱:</label>
+							<span></span>
+						</li>
+					</ul>
+					<input type="button" class="close" />
+					<div class="handleBar">
+						<a href="#">使用一键购</a>
+						<a href="#">编辑</a>
+					</div>
+					<div class="editInputBar">
+						<input type="text" class="editInput" value="孙帅"/>
+						<input type="button" value="保存" class="editBtn"/>
+						<p>建议填写常用名称：</p>
+						<span>家里</span><span>父母家</span>
+						<span>公司</span>
+					</div>
+				</div>
+				<div class="addressItem">
+					<h2>孙帅</h2>
+					<input type="button" class="editAdressBtn" />
+					<!--<span class="default">默认地址</span>-->
+					<ul class="infoList">
+						<li>
+							<label>收货人:</label>
+							<span>孙帅</span>
+						</li>
+						<li>
+							<label>所在地区:</label>
+							<span>肇庆市端州路133号  邮编：333111</span>
+						</li>
+						<li>
+							<label>地址:</label>
+							<span>广州市白云国际机场空港思路海关大楼1号</span>
+						</li>
+						<li>
+							<label>手机:</label>
+							<span>138****3331</span>
+						</li>
+						<li>
+							<label>固定电话:</label>
+							<span></span>
+						</li>
+						<li>
+							<label>电子邮箱:</label>
+							<span></span>
+						</li>
+					</ul>
+					<input type="button" class="close" />
+					<div class="handleBar">
+						<a href="#">使用一键购</a>
+						<a href="#">编辑</a>
+					</div>
+					<!--  默认隐藏修改信息框  点击小扳手图标显示-->
+					<div class="editInputBar">
+						<input type="text" class="editInput" value="孙帅"/>
+						<input type="button" value="保存" class="editBtn"/>
+						<p>建议填写常用名称：</p>
+						<span>家里</span><span>父母家</span>
+						<span>公司</span>
+					</div>
+				</div>
+				<!-- addressItem start -->
+				<!-- addAddressDiv  start -->
+				<div class="addAddressDiv">
+					<input type="button" class="addAddressBtn" value="新增收货地址"/>
+					<span> 您已创建<i>8</i> 个收货地址，最多可创建<i>20</i>个</span>
+				</div>
+				<!-- addAddressDiv end -->
+			</div>
+		</div>
+		
+		<script>
+		/*
+		 * 兼容IE11，Edge，Chrome等最新版本浏览器
+		 * 
+		 * 点击小扳手图标显示  修改信息框
+		 * 点击保存修改h2标题中内容
+		 * 
+		 * */
+		(function(){
+			/* 获取元素 */
+			let editAdressBtn = document.querySelectorAll('.editAdressBtn'),
+				editInputBar = document.querySelectorAll('.editInputBar'),
+				addressItem = document.querySelectorAll('.addressItem'),
+				editBtn = document.querySelectorAll('.editBtn'),
+				editInputBarSpan = document.querySelectorAll('.editInputBar span');
+			/* 修改按钮点击事件  点击显示editInputBar弹框 */
+			for(let i=0,len = editAdressBtn.length;i<len;i++){
+				editAdressBtn[i].onclick = function(e){
+					let ele = this.parentNode.querySelector('.editInputBar');
+					ele.style.display = 'block';
+					ele.onclick = function(e){
+						e.stopPropagation();
+					}
+					e.stopPropagation();
+				}
+			}
+			/* addressItem点击事件   点击隐藏 editInputBar弹框*/
+			for(let i=0,len = addressItem.length; i<len; i++){
+				addressItem[i].onclick = function(e){
+					for(let i=0,len = editInputBar.length; i<len;i++){
+						editInputBar[i].style.display = 'none';
+					}
+				}
+			}
+			/* 保存按钮点击事件 */
+			for(let i=0,len = editBtn.length; i<len; i++){
+				editBtn[i].onclick = function(){
+					this.parentNode.parentNode.querySelector('h2').innerHTML = this.parentNode.querySelector('.editInput').value;
+					this.parentNode.style.display = 'none';
+				}
+			}
+			/* span 点击事件 */
+			for(let i=0,len=editInputBarSpan.length; i<len; i++){
+				editInputBarSpan[i].onclick = function(){
+					this.parentNode.parentNode.querySelector('h2').innerHTML = this.innerHTML;
+					this.parentNode.style.display = 'none';
+				}
+			}
+		})();
+		</script>
+	</body>
+</html>

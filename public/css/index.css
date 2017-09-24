@@ -1,0 +1,338 @@
+/*
+ * date：2017-07-13 
+ * name：电商项目首页样式
+ * author：孙帅
+ * */
+.logo {
+	width: 185px;
+	height: 160px;
+	float: left;
+	box-shadow: 0 -10px 10px rgba(0, 0, 0, .2);
+}
+/* 购物车按钮 */
+.btn-shop {
+	width: 188px;
+	height: 33px;
+	float: right;
+	display: block;
+	border: 1px solid #e3e4e5;
+	background-color: #FFF;
+	/*background: #fff url(../images/icon/icon-shop.jpg) 38px center no-repeat;*/
+	color: #f00;
+	font-size: 12px;
+	/*margin: 35px 98px 0 0;*/
+	line-height: 33px;
+	position: absolute;
+	top: 60px;
+	left: 897px;
+	text-align: center;
+}
+.icon-shop {
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 5px;
+	margin-bottom: -3px;
+	background: url(../images/icon/icon-shop.jpg) no-repeat;
+}
+.cart-size {
+	position: absolute;
+	left: 138px;
+	top: 3px;
+	min-width: 12px;
+	height: 12px;
+	padding: 1px;
+	text-align: center;
+	line-height: 12px;
+	font-size: 12px;
+	font-weight: bold;
+	background: red;
+	color: #fff;
+	border-radius: 7px;
+}
+.btn-shop:hover {
+	border-color: #ccc;
+}
+/* 顶部导航条 */
+.navTopMenu {
+	width: 998px;
+	height: 25px;
+	float: right;
+	background: #E3E4E5;
+	border-bottom: 1px solid #ddd;
+}
+.navTopMenu label{
+	float: left;
+	padding-left: 17px;
+	background: url(../images/icon/icon-location.jpg) left center no-repeat;
+	font-size: 12px;
+	margin-left: 20px;
+	line-height: 25px;
+}
+.navTopMenu ul {
+	float: right;
+	margin-top: 3px;
+}
+
+.navTopMenu li {
+	float: left;
+	padding: 0 12px;
+	font-size: 12px;
+	border-right: 1px solid #ccc;
+	color: #ccc;
+}
+.navTopMenu li.redFont{
+	color: #f00;
+}
+/* 搜索框区域 */
+.inputDiv {
+	position: absolute;
+	left: 314px;
+	top: 60px;
+}
+.inputStyle_1 {
+	width: 494px;
+	height: 33px;
+	background: #FFFFFF;
+	border: 1px solid #f00;
+	float: left;
+	color: #989898;
+	padding-left: 4px;
+}
+.inputStyle_2 {
+	width: 50px;
+	height: 35px;
+	float: left;
+	border: none;
+	cursor: pointer;
+	background: #f30215 url(../images/icon/icon-search.jpg) center no-repeat;
+}
+/* 头部主导航 */
+.navBottomMenu {
+	position: absolute;
+	bottom: 7px;
+	left: 225px;
+}
+.navBottomMenu li {
+	float: left;
+	padding: 0 12px;
+	font-size: 14px;
+	color: #555;
+	font-weight: bold;
+	position: relative;
+}
+.hot{
+	width: 30px;;
+	height: 19px;
+	position: absolute;
+	right:-10px;
+	top: -15px;
+	background: url(../images/icon/icon-hot.jpg) no-repeat;
+}
+/* 网页主体部分 */
+/*产品导航条 弹出菜单*/
+.showNavPopup{
+	width:420px;
+	height: 300px;
+	color: #000;
+	background: #FFF;
+	position: absolute;
+	top: 0;
+	left: 185px;
+	z-index: 11;
+	display: none;
+}
+.subNavProduct{
+	width: 185px;
+	height: 480px;
+	background: #6e656a;
+	float: left;
+}
+.subNavProduct ul{
+	margin: 25px 0 0 0px;
+	display: block;
+}
+.subNavProduct ul li{
+	color: #FFF;
+	height: 31px;
+	line-height: 31px;
+	padding-left: 12px;
+	font-size: 14px;
+	position: relative;
+}
+.subNavProduct ul li:hover{
+	background: #CCCCCC;
+}
+/*.subNavProduct ul li:hover .showNavPopup{
+	display: block;
+}*/
+.subNavProduct ul li a{
+	color: #FFF;
+	text-decoration: none;
+}
+.subNavProduct ul li a:hover{
+	color: #F30215;
+	text-decoration: underline;
+}
+/**/
+
+.mainRight{
+	width: 986px;
+	height: 480px;
+	float: right;
+}
+/* 轮播广告 start */
+.slideWrap{
+	width: 986px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+}
+.slideWrap ul{
+	width: 2958px;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slideWrap ul li{
+	width: 986px;
+	float: left;
+	overflow: hidden;
+}
+.slideWrap ul li img{
+	width: 986px;
+	height: 340px;
+}
+/* 轮播图左右按钮 */
+.slideWrap label,.slideWrap span{
+	width: 40px;
+	height: 60px;
+	display: block;
+	position: absolute;
+	top: 140px;
+	font-size: 24px;
+	text-align: center;
+	line-height: 60px;
+	background: #000;
+	color: #fff;
+	opacity: 0.6;
+	cursor: pointer;
+	transition: opacity .2s;
+}
+.slideWrap label:hover,.slideWrap span:hover{
+	opacity: 0.3;
+}
+/* 轮播图 小白点 */
+.slidePoint{
+	width:112px;
+	height: 30px;
+	padding: 0 6px;
+	position: absolute;
+	bottom: 10px;
+	border-radius: 20px;
+	left: 50%;
+	margin-left:-56px;
+	z-index: 12;
+}
+.slidePointBg{
+	background: #FFF;
+	opacity: 0.3;
+	z-index: 11;
+}
+.slidePoint p{
+	float: left;
+	width: 16px;
+	height: 16px;
+	background: #FFF;
+	margin:7px 6px 0 6px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background .3s;
+}
+.slidePoint p:hover,.slidePoint p.redP{
+	background: #F00;
+}
+/* 轮播广告 end */
+.advDiv{
+	width:488px;
+	height: 130px;
+	background: #E1A769;
+}
+/* 享品质 title */
+.productTitle{
+	width: 1183px;
+	height: 50px;
+	margin: 0 auto;
+	background-color: #f6f6f6;
+	background-image: url(../images/icon/icon-dot.png);
+	background-repeat: repeat-x;
+	background-position: 0 center;
+	text-align: center;
+	overflow: hidden;
+}
+.productTitle p{
+	line-height: 50px;
+	font-size: 30px;
+	padding: 0 57px;
+	display: inline;
+	background-color: #f6f6f6;
+}
+/* 享品质  list */
+.productContent{
+	width: 1156px;
+	height: 170px;
+	margin: 0 auto;
+}
+.productItem{
+	float: left;
+	width: 375px;
+	height: 170px;
+	position: relative;
+	overflow: hidden;
+	margin: 0 5px;
+}
+.productItem dl{
+	width: 135px;
+	height: 170px;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.productItem dl.bg_1{
+	background: #D78E28;
+}
+.productItem dl.bg_2{
+	background: #D78E28;
+}
+.productItem dl.bg_3{
+	background: #D78E28;
+}
+.productItem dl dt{
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	color:#FFF;
+	border-top: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	margin: 45px auto 11px auto;
+}
+.productItem dl dd{
+	color: #fff;
+	font-size: 14px;
+	width: 100px;
+	margin: 0 auto;
+}
+.productItem img{
+	transition: transform .3s;
+}
+.productItem img:hover{
+	transform: translateX(-10px);
+	cursor: pointer;
+}

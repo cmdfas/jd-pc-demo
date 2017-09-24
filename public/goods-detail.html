@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>电商项目 -- 商品详情页</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/layout.css" />
+		<link rel="stylesheet" href="css/common.css"/>
+		<link rel="stylesheet" href="css/goodsDetail.css" />
+	</head>
+	<body>
+		<div class="goodsWrap">
+			<!-- 左侧 -->
+			<div class="wrapLeft">
+				<!-- 大图预览 -->
+				<div class="goodsBigImg" id="goodsBigImgId">
+					<div class="bigImgMask" id="bigImgMaskId"></div>
+					<img id="bigImgId" src="images/loading.gif" width="495" height="495"/>
+					<i></i>
+					<div class="big-box" id="bigBoxImgId">
+						<img src="images/loading.gif" />
+					</div>
+				</div>
+				<div class="smallImgList">
+					<!-- 小缩略图列表 -->
+					<ul id="smallImgId">
+						<!--<li><img src="images/temp/temp6.jpg"/></li>
+						<li><img src="images/temp/temp7.jpg"/></li>
+						<li><img src="images/temp/temp8.jpg"/></li>
+						<li><img src="images/temp/temp9.jpg"/></li>
+						<li><img src="images/temp/temp10.jpg"/></li>-->
+					</ul>
+					<!-- 左右箭头按钮 -->
+					<label id="leftBtnId"></label>
+					<span id="rightBtnId"></span>
+				</div>
+			</div>
+			<!-- 右侧 -->
+			<div class="wrapRight">
+				<div class="goodsInfo" id="goodsInfoId">
+					<!--<h1>【京东超市】露得清（Neutrogena）防晒喷雾轻透沁凉防晒155g SPF30+/PA+++（进口防晒霜 清爽不油 防水防汗男女士 物理防晒运动型）</h1>
+					<p>露防晒，轻时代，让你重现肌肤透气感带着露得清去旅行！←点击抢购</p>-->
+				</div>
+				<!-- 配送 title -->
+				<div class="sendGoodsAddress">
+					<label>配 送 至</label>
+					<div class="addressTitle" id="addressTitleId">
+						<!--<span>辽宁</span>
+						<span>沈阳</span>
+						<span>和平区</span>-->
+						<span id="addressDivId">请选择地址</span>
+						<i></i>
+					</div>
+				</div>
+				<!-- 配送城市列表-->
+				<div class="addressList" id="addressListId" style="display: none;">
+					<p>选择新地址</p>
+					<ul id="tabTitleId">
+						<li id="tabA" class="yellow">请选择省</li>
+						<li id="tabB" style="display: none;">请选择市</li>
+						<li id="tabC" style="display: none;">请选择区</li>
+					</ul>
+					<div class="nameItemList" id="provinceId">
+						<!--<p>和平区</p>
+						<p>和平区</p>
+						<p>和平区</p>
+						<p>和平区</p>
+						<p>和平区</p>
+						<p>和平区</p>-->
+					</div>
+					<div class="nameItemList" id="cityId" style="display: none;">
+					</div>
+					<div class="nameItemList" id="areaId" style="display: none;">
+					</div>
+				</div>
+				<!-- 加入购物车的按钮 -->
+				<div class="toShopingCar">
+					<div class="inputWrap">
+						<input class="input-A" type="text" value="1" id="toShopingCarNumberId"/>
+						<input class="input-B" type="button" value="+" id="toShopingCarAddId"/>
+						<input class="input-C" type="button" value="-" id="toShopingCarReduceId"/>
+					</div>
+					<a  href="shopping-cart.html" class="toShopingCarBtn" id="toShopingCarBtnId">加入购物车</a>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/library/jquery-1.7.1.min.js"></script>
+		<script type="text/javascript" src="js/common.js"></script>
+		<script type="text/javascript" src="js/config.js"></script>
+		<script type="text/javascript" src="js/goodsDetail.js"></script>
+		<script type="text/javascript" src="js/addressSelect.js"></script>
+	</body>
+</html>

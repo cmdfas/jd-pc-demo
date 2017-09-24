@@ -1,0 +1,163 @@
+/*
+ * date：2017-07-21 
+ * name：电商项目-地址选择页-样式
+ * author：孙帅
+ * */
+
+/* 复用以下来自userinfo文件的样式 */
+/*
+#userInfoWrap
+#userInfoWrap .navUserInfo
+#userInfoWrap .navUserInfo dt
+#userInfoWrap .navUserInfo dd
+#userInfoWrap .navUserInfo dd.active
+#userInfoWrap .mainRight
+*/
+
+/* addAddressDiv */
+.addAddressDiv{
+	height: 30px;
+	margin: 20px 0 0 20px;
+}
+.addAddressDiv .addAddressBtn{
+	width: 114px;
+	height: 28px;
+	background: url(../images/addAddressBtn-bg.jpg) center repeat-x;
+	border: 1px solid #BFD6Af;
+	border-radius: 3px;
+	font-size: 14px;
+	text-align: center;
+	color: #333;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 15px;
+}
+.addAddressDiv span{
+	color: #999;
+	font-size: 12px;
+}
+.addAddressDiv span i{
+	color: #71B291;
+}
+/* addressItem */
+.addressItem{
+	width: 830px;
+	border: 2px solid #E6E6E6;
+	padding: 12px;
+	box-sizing: border-box;
+	margin: 12px 0 0 20px;
+	position: relative;
+}
+.addressItem h2{
+	font-size: 14px;
+	color: #666;
+	display: inline-block;
+	line-height: 22px;
+}
+.addressItem .editAdressBtn{
+	width: 12px;
+	height: 12px;
+	background: url(../images/icon/icon-edit.png) no-repeat;
+	cursor: pointer;
+	margin:0 20px 0 18px;
+}
+.addressItem .default{
+	font-size: 12px;
+	color: #FFF;
+	padding: 3px 3px;
+	background: #FFAA45;
+}
+/* infoList */
+.addressItem .infoList{
+	padding-top: 16px;
+}
+.addressItem .infoList li{
+	font-size: 12px;
+	height: 24px;
+	line-height: 24px;
+}
+.addressItem .infoList li label{
+	width: 60px;
+	text-align: right;
+	color: #999;
+	display: inline-block;
+}
+.addressItem .infoList li span{
+	color: #666;
+	text-align: left;
+}
+.addressItem .close{
+	width: 13px;
+	height: 13px;
+	background: url(../images/icon/icon-close.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+.addressItem .handleBar{
+	position: absolute;
+	bottom: 12px;
+	right: 28px;
+}
+.addressItem .handleBar a{
+	color: #005EA7;
+	font-size: 12px;
+	margin-left: 15px;
+	
+}
+/* 广告区域 */
+.adv-adress-select-1{
+	width: 90px;
+	height: 70px;
+	overflow: hidden;
+	margin-top: 10px;
+	background: url(../images/temp/temp13.jpg) no-repeat;
+}
+/* 隐藏修改输入框 */
+.addressItem .editInputBar{
+	width: 220px;
+	height: 128px;
+	border: 1px solid #ddd;
+	position: absolute;
+	top: 8px;
+	left: 8px;
+	font-size: 12px;
+	background: #fff;
+	display: none;
+}
+.addressItem .editInputBar .editInput{
+	width: 168px;
+	height: 23px;
+	border-bottom: 1px solid #ddd;
+	line-height: 23px;
+	float: left;
+}
+.addressItem .editInputBar .editBtn{
+	width: 52px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background: #e64346;
+	color: #FFF;
+	float: left;
+}
+.addressItem .editInputBar p{
+	overflow: hidden;
+	color: #999;
+	padding: 10px 0 0 10px;
+	clear: both;
+}
+.addressItem .editInputBar span{
+	color: #666;
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 6px 12px;
+	margin-left: 10px;
+	margin-top: 10px;
+	display: inline-block;
+}
+.addressItem .editInputBar span:hover{
+	color: #e4693c;
+	border-color: #e4693c;
+}
